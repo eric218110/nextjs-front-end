@@ -10,9 +10,7 @@ export default function Home() {
         <title>App</title>
         <link rel="icon" href="/icon/favicon.ico" />
       </Head>
-      <Laytout>
-
-      </Laytout>
+      <Laytout/>
       {/* <img src="/images/image-1.png" alt="Vercel" className={styles.logo}/> */}
 
     </>
