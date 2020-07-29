@@ -1,15 +1,21 @@
-import React from 'react'
-import { light } from '../styles/theme'
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import GlobalStyles from '../styles/Global'
+import { light } from '../styles/theme';
+import GlobalStyles from '../styles/Global';
 
-function MyApp({ Component, pageProps }) {
-    return (
-        <ThemeProvider theme={light}>
-            <GlobalStyles />
-            <Component {...pageProps} />
-        </ThemeProvider>
-    );
+interface IProps {
+  Component: any;
+  props: any;
 }
 
-export default MyApp
+function MyApp({ Component, props }: IProps): JSX.Element {
+  return (
+    <ThemeProvider theme={light}>
+      <GlobalStyles />
+      <Component {...props} />
+    </ThemeProvider>
+  );
+}
+
+export default MyApp;

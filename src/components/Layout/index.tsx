@@ -1,8 +1,10 @@
-import React from 'react'
-import { Container } from './styles'
+import React from 'react';
+import { Container, Title } from './styles';
 
 const Laytout: React.FC = () => (
-     <Container>App</Container>
-)
+  <Container>
+    <Title>App</Title>
+  </Container>
+);
 
-export default Laytout
+export default Laytout;
