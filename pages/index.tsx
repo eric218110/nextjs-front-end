@@ -2,6 +2,10 @@ import React from 'react';
 import Head from 'next/head';
 import styled from 'styled-components';
 import Header from '../src/components/Header';
+import SectionExplorer from '../src/components/SectionExplorer';
+import SectionFeatured from '../src/components/SectionFeatured';
+import SectionGuides from '../src/components/SectionGuides';
+import Testimonials from '../src/components/Testimonials';
 
 const LayoutHomePage = styled.div`
   max-width: 1200px;
@@ -30,6 +34,10 @@ export default function Home(): JSX.Element {
       <GlobalContainer>
         <LayoutHomePage>
           <Header />
+          <SectionExplorer />
+          <SectionFeatured />
+          <SectionGuides />
+          <Testimonials />
         </LayoutHomePage>
       </GlobalContainer>
 
