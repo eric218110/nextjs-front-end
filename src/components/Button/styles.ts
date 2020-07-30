@@ -1,11 +1,12 @@
 import styled, { css } from 'styled-components';
 import { shade } from 'polished';
+import ReactInk from 'react-ink';
 
 interface IButtonProps {
   outline: boolean;
 }
 
-const Container = styled.button<IButtonProps>`
+export const Container = styled.button<IButtonProps>`
   width: 132px;
   height: 44px;
   border-radius: 8px;
@@ -37,4 +38,6 @@ const Container = styled.button<IButtonProps>`
   }
 `;
 
-export default Container;
+export const Ink = styled(ReactInk).attrs({
+  duration: 900,
+})``;
