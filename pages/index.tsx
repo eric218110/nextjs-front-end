@@ -8,6 +8,12 @@ const LayoutHomePage = styled.div`
   margin: auto;
 `;
 
+const GlobalContainer = styled.div`
+  flex: 1;
+  background: ${(props) => props.theme.colors.background};
+  padding-top: 30px;
+`;
+
 export default function Home(): JSX.Element {
   return (
     <>
@@ -21,9 +27,12 @@ export default function Home(): JSX.Element {
         />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <LayoutHomePage>
-        <Header />
-      </LayoutHomePage>
+      <GlobalContainer>
+        <LayoutHomePage>
+          <Header />
+        </LayoutHomePage>
+      </GlobalContainer>
+
       {/* <img src="/images/image-1.png" alt="Vercel" className={styles.logo}/> */}
     </>
   );

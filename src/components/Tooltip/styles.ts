@@ -5,7 +5,7 @@ const Container = styled.div`
 
   span {
     width: 160px;
-    background: #ff9000;
+    background: ${(props) => props.theme.colors.primary};
     padding: 8px;
     border-radius: 4px;
     font-size: 14px;
@@ -25,7 +25,7 @@ const Container = styled.div`
       left: 50%;
       transform: translateX(-50%);
       border-style: solid;
-      border-color: #ff9000 transparent;
+      border-color: ${(props) => props.theme.colors.primary} transparent;
       border-width: 6px 6px 0 6px;
       top: 100%;
       position: absolute;

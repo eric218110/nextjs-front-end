@@ -1,8 +1,7 @@
 import React, { useRef, useState, useEffect, useCallback } from 'react';
 import { IconBaseProps } from 'react-icons';
 import { useField } from '@unform/core';
-import { FiAlertCircle } from 'react-icons/fi';
-import { Container, Error } from './styles';
+import { Container, Error, IconError } from './styles';
 
 interface IProps extends React.InputHTMLAttributes<HTMLInputElement> {
   name: string;
@@ -45,7 +44,7 @@ const Input: React.FC<IProps> = ({ name, Icon, ...props }) => {
       />
       {error && (
         <Error title={error}>
-          <FiAlertCircle color="#c53030" />
+          <IconError />
         </Error>
       )}
     </Container>

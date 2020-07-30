@@ -24,7 +24,7 @@ export const ContentHolidayFinder = styled.div`
 
   hr {
     margin: 21px 0 48px 0;
-    border: 2px solid #202336;
+    border: 2px solid ${(props) => props.theme.colors.title};
     width: 32px;
     border-radius: 4px;
   }

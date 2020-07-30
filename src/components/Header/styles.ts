@@ -4,7 +4,6 @@ import logo from '../../../public/icon/logo.svg';
 export const Container = styled.div`
   width: 100%;
   margin: auto;
-  margin-top: 35px;
 `;
 
 export const Logo = styled(logo)`

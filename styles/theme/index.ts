@@ -2,12 +2,14 @@
 import { DefaultTheme } from 'styled-components';
 
 export const light: DefaultTheme = {
+  name: 'light',
   colors: {
     primary: '#FB8F1D',
     secundary: '#1ABE84',
     text: '#FFF',
+    background: '#FEFEFE',
     title: '#202336',
-    subtitle: '#7D7987',
+    subtitle: '#b8becd',
     actions: {
       error: '#ED553B',
       warning: '#F6D55C',

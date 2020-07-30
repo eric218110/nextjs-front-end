@@ -10,26 +10,26 @@ const Container = styled.button<IButtonProps>`
   height: 44px;
   border-radius: 8px;
   cursor: pointer;
-  background: #fb8f1d;
-  border: 1px solid #fb8f1d;
+  background: ${(props) => props.theme.colors.primary};
+  border: 1px solid ${(props) => props.theme.colors.primary};
   padding: 0 16px;
-  color: #fff;
+  color: ${(props) => props.theme.colors.text};
   font-size: 15px;
   font-weight: 500;
   transition: background-color 0.2s;
   position: relative;
   &:hover {
-    background: ${shade(0.2, '#FB8F1D')};
+    background: ${(props) => shade(0.2, props.theme.colors.primary)};
   }
   ${(props) =>
     props.outline &&
     css`
-      border-color: #fb8f1d;
-      color: #fb8f1d;
-      background-color: #fff;
+      border-color: ${props.theme.colors.primary};
+      color: ${props.theme.colors.primary};
+      background-color: ${props.theme.colors.text};
 
       &:hover {
-        background: ${shade(0.2, '#FFF')};
+        background: ${shade(0.2, props.theme.colors.text)};
       }
     `}
   & + button {
