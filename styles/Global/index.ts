@@ -14,6 +14,10 @@ export default createGlobalStyle`
     ul, li {
         list-style: none;
     }
+
+    hr {
+      border: 1px solid ${(props) => props.theme.colors.subtitle};
+    }
     
     button, input:focus { outline: none; }
 
