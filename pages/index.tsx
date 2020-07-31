@@ -6,6 +6,8 @@ import SectionExplorer from '../src/components/SectionExplorer';
 import SectionFeatured from '../src/components/SectionFeatured';
 import SectionGuides from '../src/components/SectionGuides';
 import Testimonials from '../src/components/Testimonials';
+import SectionTrending from '../src/components/SectionTrending';
+import Footer from '../src/components/Footer';
 
 const LayoutHomePage = styled.div`
   max-width: 1200px;
@@ -38,6 +40,8 @@ export default function Home(): JSX.Element {
           <SectionFeatured />
           <SectionGuides />
           <Testimonials />
+          <SectionTrending />
+          <Footer />
         </LayoutHomePage>
       </GlobalContainer>
 
