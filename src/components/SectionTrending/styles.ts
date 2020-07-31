@@ -3,7 +3,7 @@ import { MdKeyboardArrowRight } from 'react-icons/md';
 
 export const Container = styled.div`
   margin: auto;
-  margin-top: 262px;
+  margin: 262px 0 200px 0;
   position: relative;
 `;
 
