@@ -31,10 +31,11 @@ const Login: React.FC = () => {
           <Link href="/">
             <Button Icon={IconHome}>Home</Button>
           </Link>
-
-          <Button Icon={IconSignUp} buttonText>
-            Registration
-          </Button>
+          <Link href="/register">
+            <Button Icon={IconSignUp} buttonText>
+              Registration
+            </Button>
+          </Link>
         </header>
         <Form onSubmit={handleFormSubmit}>
           <h1>Welcome</h1>

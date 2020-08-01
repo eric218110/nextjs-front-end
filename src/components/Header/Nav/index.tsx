@@ -18,7 +18,9 @@ const Nav: React.FC = () => (
         <a>Login</a>
       </Button>
     </Link>
-    <Button Icon={FiPlus}>Register</Button>
+    <Link href="/register">
+      <Button Icon={FiPlus}>Register</Button>
+    </Link>
   </Container>
 );
 
