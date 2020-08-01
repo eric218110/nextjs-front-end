@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import image from '../../../public/images/thousand-03.svg';
+import ButtonStyled from '../Button';
 
 export const Container = styled.div`
   display: flex;
@@ -29,4 +30,8 @@ export const Image = styled(image)`
   max-width: 50%;
   max-width: 50%;
   height: 100%;
+`;
+
+export const Button = styled(ButtonStyled)`
+  width: 160px;
 `;

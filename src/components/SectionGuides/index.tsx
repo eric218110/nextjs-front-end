@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Container, ContentLeft, Image } from './styles';
-import Button from '../Button';
+import { FiDownloadCloud } from 'react-icons/fi';
+import { Container, ContentLeft, Image, Button } from './styles';
 import { Circle, Plus } from '../Shape';
 
 const SectionGuides: React.FC = () => (
@@ -15,7 +15,7 @@ const SectionGuides: React.FC = () => (
         guides app (IOS and Android) is the ultimate resource before and during
         a trip
       </p>
-      <Button>Dowload</Button>
+      <Button Icon={FiDownloadCloud}>Dowload</Button>
     </ContentLeft>
     <Image />
   </Container>

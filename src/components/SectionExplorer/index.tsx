@@ -1,6 +1,7 @@
 import React from 'react';
-import { Container, Image, ContentRight } from './styles';
-import Button from '../Button';
+import { MdInfo } from 'react-icons/md';
+import { Container, Image, ContentRight, Button } from './styles';
+
 import { Plus } from '../Shape';
 
 const SectionExplorer: React.FC = () => (
@@ -14,7 +15,7 @@ const SectionExplorer: React.FC = () => (
         to plan and execute their perfect trip, but now, they can also let
         Lonely Planet Experiences lead the way
       </p>
-      <Button>Learn more</Button>
+      <Button Icon={MdInfo}>Learn more</Button>
     </ContentRight>
   </Container>
 );

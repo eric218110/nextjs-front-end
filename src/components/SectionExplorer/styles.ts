@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import image from '../../../public/images/thousand-02.svg';
+import ButtonStyled from '../Button';
 
 export const Container = styled.div`
   margin-top: 200px;
@@ -32,4 +33,8 @@ export const ContentRight = styled.div`
     line-height: 30px;
     max-width: 450px;
   }
+`;
+
+export const Button = styled(ButtonStyled)`
+  width: 160px;
 `;
