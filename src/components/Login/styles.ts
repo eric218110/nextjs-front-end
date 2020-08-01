@@ -142,7 +142,6 @@ export const LoginWithGoogle = styled(ButtonStyled)`
   margin: 5px;
   background-color: ${(props) => shade(0.07, props.theme.colors.background)};
   color: ${(props) => props.theme.colors.subtitle};
-  border-radius: 20px;
   border-color: transparent;
 
   svg {
