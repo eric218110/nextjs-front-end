@@ -13,7 +13,7 @@ export const Container = styled.button<IButtonProps>`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-radius: 8px;
+  border-radius: 20px;
   cursor: pointer;
   background: ${(props) => props.theme.colors.primary};
   border: 1px solid ${(props) => props.theme.colors.primary};
@@ -42,7 +42,7 @@ export const Container = styled.button<IButtonProps>`
       background-color: ${props.theme.colors.text};
 
       &:hover {
-        background: ${shade(0.2, props.theme.colors.text)};
+        background: ${shade(0.03, props.theme.colors.text)};
       }
       svg {
         color: ${props.theme.colors.primary};
