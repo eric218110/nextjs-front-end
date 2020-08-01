@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { darken } from 'polished';
+import { shade } from 'polished';
 
 interface IListItemProps {
   active?: boolean;
@@ -22,16 +22,17 @@ export const ItemList = styled.li<IListItemProps>`
   cursor: pointer;
   color: ${(props) => props.theme.colors.subtitle};
   font-size: 16px;
+  padding: 0 5px;
   &:hover {
-    color: ${(props) => darken(0.2, props.theme.colors.subtitle)};
+    color: ${(props) => shade(0.2, props.theme.colors.subtitle)};
   }
   ${(props) =>
     props.active &&
     css`
-      color: ${props.theme.colors.title};
+      color: ${props.theme.colors.primary};
       font-weight: 500;
       &:hover {
-        color: ${darken(0.2, props.theme.colors.title)};
+        color: ${shade(0.2, props.theme.colors.primary)};
       }
     `};
   &:last-child {

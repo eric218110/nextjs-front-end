@@ -7,33 +7,19 @@ interface IContainerProps {
   isFocused: boolean;
   isFilled: boolean;
   isErrored: boolean;
+  backgroundColor?: string;
 }
 
 export const Container = styled.div<IContainerProps>`
   background: ${(props) => props.theme.colors.text};
-  width: 220px;
-  border-radius: 6px;
-  padding: 16px;
+  width: 100%;
+  border-radius: 25px;
+  padding: 16px 30px;
   display: flex;
   align-items: center;
   color: ${(props) => darken(0.5, props.theme.colors.subtitle)};
   border: 0.8px solid ${(props) => darken(0.2, props.theme.colors.subtitle)};
-  ${(props) =>
-    props.isErrored &&
-    css`
-      border-color: ${props.theme.colors.actions.error};
-    `}
-  ${(props) =>
-    props.isFocused &&
-    css`
-      color: ${props.theme.colors.primary};
-      border-color: ${props.theme.colors.primary};
-    `}
-  ${(props) =>
-    props.isFilled &&
-    css`
-      color: ${props.theme.colors.primary};
-    `}
+
   input {
     background: transparent;
     border: none;
@@ -42,9 +28,35 @@ export const Container = styled.div<IContainerProps>`
     color: ${(props) => darken(0.5, props.theme.colors.subtitle)};
     font-size: 15px;
   }
+
   svg {
     margin-right: 16px;
   }
+
+  ${(props) =>
+    props.backgroundColor &&
+    css`
+      background: ${props.backgroundColor};
+    `}
+
+  ${(props) =>
+    props.isErrored &&
+    css`
+      border-color: ${props.theme.colors.actions.error};
+    `}
+
+  ${(props) =>
+    props.isFocused &&
+    css`
+      color: ${props.theme.colors.primary};
+      border-color: ${props.theme.colors.primary};
+    `}
+
+  ${(props) =>
+    props.isFilled &&
+    css`
+      color: ${props.theme.colors.primary};
+    `}
 `;
 
 export const Error = styled(Tooltip)`

@@ -1,4 +1,7 @@
 import React from 'react';
+import Link from 'next/link';
+import { MdKeyboardArrowRight } from 'react-icons/md';
+import { FiPlus } from 'react-icons/fi';
 import { Container, ItemList } from './styles';
 import Button from '../../Button';
 
@@ -10,8 +13,12 @@ const Nav: React.FC = () => (
       <ItemList>About</ItemList>
       <ItemList>Partner</ItemList>
     </ul>
-    <Button outline>Login</Button>
-    <Button>Register</Button>
+    <Link href="/login">
+      <Button Icon={MdKeyboardArrowRight} outline>
+        <a>Login</a>
+      </Button>
+    </Link>
+    <Button Icon={FiPlus}>Register</Button>
   </Container>
 );
 

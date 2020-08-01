@@ -1,6 +1,7 @@
 import React, { useCallback } from 'react';
 import { Form } from '@unform/web';
 import { MdCompareArrows, MdFlag, MdDateRange, MdNearMe } from 'react-icons/md';
+import { IoIosSend } from 'react-icons/io';
 import { Plus, Circle } from '../../Shape';
 import Input from '../../Input';
 import Button from '../../Button';
@@ -44,7 +45,9 @@ const Body: React.FC = () => {
             />
             <Input Icon={MdDateRange} placeholder="Date" name="date" />
           </InputGroup>
-          <Button type="submit">Explore</Button>
+          <Button Icon={IoIosSend} type="submit">
+            Explore
+          </Button>
         </Form>
       </ContentHolidayFinder>
       <Image />

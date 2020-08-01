@@ -24,7 +24,7 @@ export default function Home(): JSX.Element {
   return (
     <>
       <Head>
-        <title>App</title>
+        <title>Find Travel</title>
         <link rel="icon" href="/icon/favicon.ico" />
         <meta charSet="utf-8" />
         <link
@@ -44,8 +44,6 @@ export default function Home(): JSX.Element {
           <Footer />
         </LayoutHomePage>
       </GlobalContainer>
-
-      {/* <img src="/images/image-1.png" alt="Vercel" className={styles.logo}/> */}
     </>
   );
 }
