@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Container, ItemList } from './styles';
 import Button from '../../Button';
 
@@ -10,7 +11,11 @@ const Nav: React.FC = () => (
       <ItemList>About</ItemList>
       <ItemList>Partner</ItemList>
     </ul>
-    <Button outline>Login</Button>
+    <Link href="/login">
+      <Button outline>
+        <a>Login</a>
+      </Button>
+    </Link>
     <Button>Register</Button>
   </Container>
 );
