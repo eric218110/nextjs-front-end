@@ -30,6 +30,14 @@ const Footer: React.FC = () => {
             <MdCopyright />
             {`${getYear()} Thousand Sunny. All rights reserved`}
           </h6>
+          <h6>
+            created by
+            {/* eslint-disable-next-line react/jsx-no-target-blank */}
+            <a href="https://github.com/eric218110" target="_blank">
+              {' '}
+              Eric Silva
+            </a>
+          </h6>
         </section>
         <section>
           <h1>Destinations</h1>
