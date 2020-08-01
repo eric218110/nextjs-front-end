@@ -13,8 +13,8 @@ interface IContainerProps {
 export const Container = styled.div<IContainerProps>`
   background: ${(props) => props.theme.colors.text};
   width: 100%;
-  border-radius: 6px;
-  padding: 16px;
+  border-radius: 25px;
+  padding: 16px 30px;
   display: flex;
   align-items: center;
   color: ${(props) => darken(0.5, props.theme.colors.subtitle)};
